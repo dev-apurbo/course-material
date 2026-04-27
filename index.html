@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f7fb;
+    }
+    .container {
+      width: min(640px, 90vw);
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 16px;
+      color: #111827;
+    }
+    .button-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .course-button {
+      padding: 14px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .course-button:hover {
+      background: #1d4ed8;
+    }
+    .note {
+      margin-top: 12px;
+      color: #6b7280;
+      font-size: 0.94rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Course Links</h1>
+    <p class="note">Click a course button to open its Google Drive folder.</p>
+    <div id="buttons" class="button-list"></div>
+  </div>
+  <script>
+    async function loadCourses() {
+      try {
+        const response = await fetch('courses.json');
+        if (!response.ok) throw new Error('Unable to load courses.json');
+        const data = await response.json();
+        const buttons = document.getElementById('buttons');
+
+        if (!Array.isArray(data.courses) || data.courses.length === 0) {
+          buttons.innerHTML = '<p>No courses found in courses.json.</p>';
+          return;
+        }
+
+        data.courses.forEach(course => {
+          const button = document.createElement('button');
+          button.className = 'course-button';
+          button.textContent = course.name || 'Open Course';
+          button.addEventListener('click', () => {
+            if (course.googleDriveLink) {
+              window.open(course.googleDriveLink, '_blank');
+            } else {
+              alert('No Google Drive link defined for this course.');
+            }
+          });
+          buttons.appendChild(button);
+        });
+      } catch (error) {
+        document.getElementById('buttons').innerHTML = '<p>Failed to load course data.</p>';
+        console.error(error);
+      }
+    }
+
+    loadCourses();
+  </script>
+</body>
+</html>
