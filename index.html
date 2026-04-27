@@ -3,92 +3,275 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Links</title>
+  <title>Course Explorer</title>
   <style>
+    :root {
+      --bg-main: #eef2ff;
+      --bg-accent: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #0f172a;
+      --text-muted: #64748b;
+      --brand: #2563eb;
+      --brand-dark: #1d4ed8;
+      --border: #e2e8f0;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f4f7fb;
+      background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 45%),
+        radial-gradient(circle at bottom left, #ede9fe 0%, transparent 40%),
+        var(--bg-main);
+      color: var(--text-primary);
+      padding: 20px;
     }
+
     .container {
-      width: min(640px, 90vw);
-      padding: 24px;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 18px 36px rgba(0,0,0,0.12);
-      text-align: center;
+      width: min(760px, 96vw);
+      padding: 30px 26px;
+      background: var(--card-bg);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.8);
     }
+
     h1 {
-      margin-bottom: 16px;
-      color: #111827;
+      margin: 0;
+      font-size: clamp(1.6rem, 2.4vw, 2rem);
+      letter-spacing: 0.01em;
     }
+
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-wrap: wrap;
+    }
+
+    .controls label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .controls select {
+      border: 1px solid var(--border);
+      background: var(--bg-accent);
+      color: var(--text-primary);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .controls select:focus {
+      outline: 2px solid #bfdbfe;
+      border-color: #93c5fd;
+    }
+
+    .controls input {
+      border: 1px solid var(--border);
+      background: var(--bg-accent);
+      color: var(--text-primary);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      min-width: 200px;
+    }
+
+    .controls input:focus {
+      outline: 2px solid #bfdbfe;
+      border-color: #93c5fd;
+    }
+
     .button-list {
       display: grid;
-      gap: 14px;
+      gap: 12px;
       margin-top: 24px;
     }
+
     .course-button {
-      padding: 14px 20px;
-      background: #2563eb;
+      padding: 14px 16px;
+      background: var(--brand);
       color: white;
-      border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
       cursor: pointer;
-      transition: background 0.2s ease;
+      text-align: left;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
+
     .course-button:hover {
-      background: #1d4ed8;
+      background: var(--brand-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.28);
     }
+
+    .course-button:active {
+      transform: translateY(0);
+    }
+
+    .course-button:focus-visible {
+      outline: 2px solid #bfdbfe;
+      outline-offset: 2px;
+    }
+
     .note {
-      margin-top: 12px;
-      color: #6b7280;
+      margin: 6px 0 0;
+      color: var(--text-muted);
       font-size: 0.94rem;
+      line-height: 1.45;
+    }
+
+    .status-message {
+      margin-top: 14px;
+      color: var(--text-muted);
+      background: #f8fafc;
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px;
+      }
+
+      .controls {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .controls input {
+        width: 100%;
+        min-width: 0;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Course Links</h1>
-    <p class="note">Click a course button to open its Google Drive folder.</p>
+    <div class="header">
+      <h1>Course Explorer</h1>
+      <div class="controls">
+        <label for="searchCourse">Search:</label>
+        <input
+          id="searchCourse"
+          type="search"
+          placeholder="Search by course name..."
+          aria-label="Search courses by name"
+        />
+        <label for="sortBy">Sort:</label>
+        <select id="sortBy" aria-label="Sort courses by name">
+          <option value="az">Course Name (A-Z)</option>
+          <option value="za">Course Name (Z-A)</option>
+        </select>
+      </div>
+    </div>
+    <p class="note">Select a course to open its Google Drive folder.</p>
     <div id="buttons" class="button-list"></div>
   </div>
   <script>
+    const buttons = document.getElementById('buttons');
+    const sortBy = document.getElementById('sortBy');
+    const searchCourse = document.getElementById('searchCourse');
+    let courses = [];
+
+    function getFilteredAndSortedCourses() {
+      const searchText = searchCourse.value.trim().toLowerCase();
+      const filtered = courses.filter(course =>
+        (course.name || '').toLowerCase().includes(searchText)
+      );
+
+      const sorted = [...filtered];
+      const isDesc = sortBy.value === 'za';
+
+      sorted.sort((a, b) => {
+        const nameA = (a.name || '').trim();
+        const nameB = (b.name || '').trim();
+        return isDesc
+          ? nameB.localeCompare(nameA, undefined, { sensitivity: 'base' })
+          : nameA.localeCompare(nameB, undefined, { sensitivity: 'base' });
+      });
+
+      return sorted;
+    }
+
+    function renderCourses() {
+      buttons.innerHTML = '';
+
+      if (!Array.isArray(courses) || courses.length === 0) {
+        buttons.innerHTML = '<p class="status-message">No courses found in courses.json.</p>';
+        return;
+      }
+
+      const sortedCourses = getFilteredAndSortedCourses();
+
+      if (sortedCourses.length === 0) {
+        buttons.innerHTML = '<p class="status-message">No matching courses found.</p>';
+        return;
+      }
+
+      sortedCourses.forEach(course => {
+        const courseLink = document.createElement('a');
+        courseLink.className = 'course-button';
+        courseLink.textContent = course.name || 'Open Course';
+
+        if (course.googleDriveLink) {
+          courseLink.href = course.googleDriveLink;
+          courseLink.target = '_blank';
+          courseLink.rel = 'noopener noreferrer';
+        } else {
+          courseLink.href = '#';
+          courseLink.addEventListener('click', event => {
+            event.preventDefault();
+            alert('No Google Drive link defined for this course.');
+          });
+        }
+
+        buttons.appendChild(courseLink);
+      });
+    }
+
     async function loadCourses() {
       try {
         const response = await fetch('courses.json');
         if (!response.ok) throw new Error('Unable to load courses.json');
         const data = await response.json();
-        const buttons = document.getElementById('buttons');
-
-        if (!Array.isArray(data.courses) || data.courses.length === 0) {
-          buttons.innerHTML = '<p>No courses found in courses.json.</p>';
-          return;
-        }
-
-        data.courses.forEach(course => {
-          const button = document.createElement('button');
-          button.className = 'course-button';
-          button.textContent = course.name || 'Open Course';
-          button.addEventListener('click', () => {
-            if (course.googleDriveLink) {
-              window.open(course.googleDriveLink, '_blank');
-            } else {
-              alert('No Google Drive link defined for this course.');
-            }
-          });
-          buttons.appendChild(button);
-        });
+        courses = Array.isArray(data.courses) ? data.courses : [];
+        renderCourses();
       } catch (error) {
-        document.getElementById('buttons').innerHTML = '<p>Failed to load course data.</p>';
+        buttons.innerHTML = '<p class="status-message">Failed to load course data.</p>';
         console.error(error);
       }
     }
 
+    sortBy.addEventListener('change', renderCourses);
+    searchCourse.addEventListener('input', renderCourses);
     loadCourses();
   </script>
 </body>
