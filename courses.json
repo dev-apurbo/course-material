@@ -1,8 +1,21 @@
 {
   "courses": [
     {
-      "name": "Example Course",
-      "googleDriveLink": "https://drive.google.com/drive/folders/EXAMPLE"
+      "name": "CSE422",
+      "googleDriveLink": "https://drive.google.com/drive/folders/18CHGDJV9BGUkwUqcPFwd1bjyJzBXe7Z0"
+    },
+    {
+      "name": "CSE471",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1NZJ3FAP1lkPB3dS0GuSozoJxGWlPIvv0"
+    },
+    {
+      "name": "CSE320",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1EIiDKx0NcMUdW97vxt7kRjxL2PF02tdP"
+    },
+    {
+      "name": "CSE350",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1RS71uMVV1yK4_rbB92m_J2lkd6y7M-x9"
     }
+    
   ]
 }
