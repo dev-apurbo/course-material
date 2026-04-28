@@ -118,6 +118,18 @@
       margin-top: 24px;
     }
 
+    .course-card {
+      display: grid;
+      gap: 8px;
+    }
+
+    .course-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: stretch;
+    }
+
     .course-button {
       padding: 14px 16px;
       background: var(--brand);
@@ -144,6 +156,48 @@
     }
 
     .course-button:focus-visible {
+      outline: 2px solid #bfdbfe;
+      outline-offset: 2px;
+    }
+
+    .course-toggle {
+      border: none;
+      min-width: 52px;
+      padding: 14px 0;
+      text-align: center;
+    }
+
+    .course-toggle-label {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .sub-link-list {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+    }
+
+    .sub-link {
+      display: block;
+      padding: 11px 14px;
+      background: var(--bg-accent);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .sub-link:hover {
+      background: #e0e7ff;
+      border-color: #bfdbfe;
+      transform: translateY(-1px);
+    }
+
+    .sub-link:focus-visible {
       outline: 2px solid #bfdbfe;
       outline-offset: 2px;
     }
@@ -211,6 +265,7 @@
     const sortBy = document.getElementById('sortBy');
     const searchCourse = document.getElementById('searchCourse');
     let courses = [];
+    let expandedCourseName = null;
 
     function getFilteredAndSortedCourses() {
       const searchText = searchCourse.value.trim().toLowerCase();
@@ -248,23 +303,93 @@
       }
 
       sortedCourses.forEach(course => {
-        const courseLink = document.createElement('a');
-        courseLink.className = 'course-button';
-        courseLink.textContent = course.name || 'Open Course';
+        const hasSubLinks = Array.isArray(course.subLinks) && course.subLinks.length > 0;
 
-        if (course.googleDriveLink) {
-          courseLink.href = course.googleDriveLink;
-          courseLink.target = '_blank';
-          courseLink.rel = 'noopener noreferrer';
-        } else {
-          courseLink.href = '#';
-          courseLink.addEventListener('click', event => {
-            event.preventDefault();
-            alert('No Google Drive link defined for this course.');
+        if (hasSubLinks) {
+          const courseCard = document.createElement('div');
+          courseCard.className = 'course-card';
+
+          const isExpanded = expandedCourseName === course.name;
+          const courseRow = document.createElement('div');
+          courseRow.className = 'course-row';
+
+          const courseLink = document.createElement('a');
+          courseLink.className = 'course-button';
+          courseLink.textContent = course.name || 'Open Course';
+
+          if (course.googleDriveLink) {
+            courseLink.href = course.googleDriveLink;
+            courseLink.target = '_blank';
+            courseLink.rel = 'noopener noreferrer';
+          } else {
+            courseLink.href = '#';
+            courseLink.addEventListener('click', event => {
+              event.preventDefault();
+              alert('No Google Drive link defined for this course.');
+            });
+          }
+
+          const courseToggle = document.createElement('button');
+          courseToggle.type = 'button';
+          courseToggle.className = 'course-button course-toggle';
+          courseToggle.setAttribute('aria-expanded', String(isExpanded));
+          courseToggle.setAttribute('aria-label', isExpanded ? `Hide links for ${course.name}` : `Show links for ${course.name}`);
+          courseToggle.innerHTML = `<span class="course-toggle-label">${isExpanded ? '-' : '+'}</span>`;
+          courseToggle.addEventListener('click', () => {
+            expandedCourseName = isExpanded ? null : course.name;
+            renderCourses();
           });
-        }
 
-        buttons.appendChild(courseLink);
+          courseRow.appendChild(courseLink);
+          courseRow.appendChild(courseToggle);
+          courseCard.appendChild(courseRow);
+
+          if (isExpanded) {
+            const subLinkList = document.createElement('div');
+            subLinkList.className = 'sub-link-list';
+
+            course.subLinks.forEach(subLink => {
+              const link = document.createElement('a');
+              link.className = 'sub-link';
+              link.textContent = subLink.label || 'Open Link';
+
+              if (subLink.url) {
+                link.href = subLink.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+              } else {
+                link.href = '#';
+                link.addEventListener('click', event => {
+                  event.preventDefault();
+                  alert('No link defined for this option yet.');
+                });
+              }
+
+              subLinkList.appendChild(link);
+            });
+            courseCard.appendChild(subLinkList);
+          }
+
+          buttons.appendChild(courseCard);
+        } else {
+          const courseLink = document.createElement('a');
+          courseLink.className = 'course-button';
+          courseLink.textContent = course.name || 'Open Course';
+
+          if (course.googleDriveLink) {
+            courseLink.href = course.googleDriveLink;
+            courseLink.target = '_blank';
+            courseLink.rel = 'noopener noreferrer';
+          } else {
+            courseLink.href = '#';
+            courseLink.addEventListener('click', event => {
+              event.preventDefault();
+              alert('No Google Drive link defined for this course.');
+            });
+          }
+
+          buttons.appendChild(courseLink);
+        }
       });
     }
 
