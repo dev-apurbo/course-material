@@ -2,7 +2,13 @@
   "courses": [
     {
       "name": "CSE422",
-      "googleDriveLink": "https://drive.google.com/drive/folders/18CHGDJV9BGUkwUqcPFwd1bjyJzBXe7Z0"
+      "googleDriveLink": "https://drive.google.com/drive/folders/18CHGDJV9BGUkwUqcPFwd1bjyJzBXe7Z0",
+      "subLinks": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/drive/folders/1R7MYfPFzh8HzMYjS6cRKlN7RFeNqJyf0"
+        }
+      ]
     },
     {
       "name": "CSE471",
