@@ -12,7 +12,13 @@
     },
     {
       "name": "CSE471",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1NZJ3FAP1lkPB3dS0GuSozoJxGWlPIvv0"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1NZJ3FAP1lkPB3dS0GuSozoJxGWlPIvv0",
+      "subLinks": [
+        {
+          "label": "Lab",
+          "url": "https://drive.google.com/drive/folders/1bCyMD7TpsXdnaFFf2A5e4vdvXeaclZeV?usp=drive_link"
+        }
+      ]
     },
     {
       "name": "CSE320",
@@ -43,12 +49,7 @@
     {
       "name": "CSE470",
       "googleDriveLink": "https://drive.google.com/drive/folders/1ZulBhRBv7kbwlk45FnBZ4fjlBVXfn4g-?usp=sharing",
-      "subLinks": [
-        {
-          "label": "Lab",
-          "url": "https://drive.google.com/drive/folders/1bCyMD7TpsXdnaFFf2A5e4vdvXeaclZeV?usp=drive_link"
-        }
-      ]
+      
     }
   ]
 }
