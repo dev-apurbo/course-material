@@ -17,6 +17,10 @@
         {
           "label": "Lab",
           "url": "https://drive.google.com/drive/folders/1bCyMD7TpsXdnaFFf2A5e4vdvXeaclZeV?usp=drive_link"
+        },
+        {
+          "label": "CSE471 Lecture Videos [AQU]",
+          "url": "https://docs.google.com/document/d/1TMnNdbXhZIMJk7W-JtsIBj4o0O4j7Q0bTbiGpowl9Bg/edit?tab=t.0"
         }
       ]
     },
@@ -49,7 +53,6 @@
     {
       "name": "CSE470",
       "googleDriveLink": "https://drive.google.com/drive/folders/1ZulBhRBv7kbwlk45FnBZ4fjlBVXfn4g-?usp=sharing"
-      
     }
   ]
 }
