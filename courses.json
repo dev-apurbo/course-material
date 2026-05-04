@@ -21,12 +21,42 @@
         {
           "label": "CSE471 Lecture Videos [AQU]",
           "url": "https://docs.google.com/document/d/1TMnNdbXhZIMJk7W-JtsIBj4o0O4j7Q0bTbiGpowl9Bg/edit?tab=t.0"
+        },
+        {
+          "label": "Use case practice sheet",
+          "url": "https://docs.google.com/document/d/17p_YEu1_0TGDiiy9uVyGpVFxJGPbH9XC8wwmnC77IY4/edit?usp=sharing"
+        },
+        {
+          "label": "Activity Diagram Practice Sheet",
+          "url": "https://docs.google.com/document/d/1JTfwq3Kjco-SOrjUY-HtIYnquc5THvUkdNux2M7KWok/edit?usp=sharing"
+        },
+        {
+          "label": "Sequence Diagram Pracitce Sheet",
+          "url": "https://docs.google.com/document/d/1LJPmPs3b36Vx798gMg9gkxv8oGjxcCmMP40LQsRKuwQ/edit?usp=sharing"
+        },
+        {
+          "label": "Sample Short Questions and Math for Mid",
+          "url": "https://drive.google.com/file/d/1llyFRgJXfhV4fTaFCrB3LIEk27LFwzJz/view?usp=drive_link"
+        },
+        {
+          "label": "DFD practice sheet",
+          "url": "https://docs.google.com/document/d/185xTG8RrtyouOZS8ymePbTSj5gAeYTcgCqbxr2kmjq8/edit?usp=sharing"
+        },
+        {
+          "label": "Component Diagram Practice Problems",
+          "url": "https://docs.google.com/document/d/1LkSiYyU_CIny0jSmJEEijhVhwhy71gQNUR2llg6ReBs/edit?usp=sharing"
         }
       ]
     },
     {
       "name": "CSE320",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1EIiDKx0NcMUdW97vxt7kRjxL2PF02tdP"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1EIiDKx0NcMUdW97vxt7kRjxL2PF02tdP",
+      "subLinks": [
+        {
+          "label": "CH5 Practice problems",
+          "url": "https://docs.google.com/document/d/1EdoAendfxJB_-pakk3U-Biv9Q4khMgEw/edit#heading=h.30j0zll"
+        }
+      ]
     },
     {
       "name": "CSE350",
