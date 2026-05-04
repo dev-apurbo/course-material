@@ -57,8 +57,16 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1EIiDKx0NcMUdW97vxt7kRjxL2PF02tdP",
       "subLinks": [
         {
+          "label": "CSE320 Recordings [Spring 2026]",
+          "url": "https://docs.google.com/document/d/1wrD1cgqMS9j9Aq-OERYEd_7JPOYlxhbWwrjF_SIi974/edit?tab=t.0"
+        },
+        {
           "label": "CH5 Practice problems",
           "url": "https://docs.google.com/document/d/1EdoAendfxJB_-pakk3U-Biv9Q4khMgEw/edit#heading=h.30j0zll"
+        },
+        {
+          "label": "Chapter-05 Practice Problem Solution ",
+          "url": "https://docs.google.com/document/d/1h8qY4iVAT6-fNCO4xumRRPjqsv-u3j9JCYGxepTmieE/edit?tab=t.0"
         }
       ]
     },
