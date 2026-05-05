@@ -107,6 +107,16 @@
     {
       "name": "CSE330",
       "googleDriveLink": "https://drive.google.com/drive/folders/1Jn6XW6JB7wzDP4fztvMsnCbVKLaUeHUF?usp=drive_link"
+    },
+    {
+      "name": "RS",
+      "googleDriveLink": "https://www.bracu.ac.bd/student-life/residential-semester",
+      "subLinks": [
+        {
+          "label": "EMB101",
+          "url": "https://drive.google.com/drive/folders/1FGm7bjfUa7ElL_0_yTeiF9-5DCWwr7bc?usp=drive_link"
+        }
+      ]
     }
   ]
 }
