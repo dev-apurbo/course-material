@@ -1,6 +1,10 @@
 {
   "courses": [
     {
+      "name": "CSE260",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1Ximy2kPtwTuhRNNYJfKp-4UBKCgzXXEe?usp=sharing"
+    },
+    {
       "name": "CSE421",
       "googleDriveLink": "https://drive.google.com/drive/folders/10PFcSDdv54kC7y7l7fIK2GUBBzdB-PAz?usp=sharing",
       "subLinks": [
