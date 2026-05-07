@@ -197,6 +197,16 @@
           "url": "https://drive.google.com/drive/folders/1FGm7bjfUa7ElL_0_yTeiF9-5DCWwr7bc?usp=drive_link"
         }
       ]
+    },
+    {
+      "name": "E-COD",
+      "googleDriveLink": "https://drive.google.com/drive/folders/10q4HH_1MYHmtKMkwHjpAGkNp5mrdl7nY?usp=sharing",
+      "subLinks": [
+        {
+          "label": "BIO101",
+          "url": "https://drive.google.com/drive/folders/1NYjLuIXAYo-Ttb-fKgeKmXl8u6xZVYbH?usp=sharing"
+        }
+      ]
     }
   ]
 }
