@@ -90,7 +90,17 @@
     },
     {
       "name": "CSE321",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1mXRkVii5bH2wEYwQRuAchvDW8Up0l5k2"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1mXRkVii5bH2wEYwQRuAchvDW8Up0l5k2",
+      "subLinks": [
+        {
+          "label": "Cse321 TRZ Recordings Fall 2020",
+          "url": "https://youtube.com/playlist?list=PL9aZtK5kh5WdJKy1ZuoGp-6R3gn36841-&si=A5hGNWMwW3kmcKJ4"
+        },
+        {
+          "label": "[FLA] CSE321: Operating Systems Class ",
+          "url": "https://youtube.com/playlist?list=PL4iTVKzFqrcOYQ_Cu4IIcUgLygzmUvsLG&si=oQNz8tLQhVtcnR04"
+        }
+      ]
     },
     {
       "name": "CSE423",
