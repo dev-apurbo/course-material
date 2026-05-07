@@ -1,12 +1,26 @@
 {
   "courses": [
     {
+      "name": "CSE421",
+      "googleDriveLink": "https://drive.google.com/drive/folders/10PFcSDdv54kC7y7l7fIK2GUBBzdB-PAz?usp=sharing",
+      "subLinks": [
+        {
+          "label": "CSE421 by Anika Tahsin",
+          "url": "https://youtube.com/playlist?list=PLCh3_NUqW7_J2wA2OxXP27lyFUDBKpLpw&si=DMAoaDYj1WxvmaTK"
+        }
+      ]
+    },
+    {
       "name": "CSE422",
       "googleDriveLink": "https://drive.google.com/drive/folders/18CHGDJV9BGUkwUqcPFwd1bjyJzBXe7Z0",
       "subLinks": [
         {
           "label": "Slides",
           "url": "https://drive.google.com/drive/folders/1R7MYfPFzh8HzMYjS6cRKlN7RFeNqJyf0"
+        },
+        {
+          "label": "Another Drive",
+          "url": "https://drive.google.com/drive/folders/159aiOW8gygSXEiTTKXP5yUu6bRTkL4k1?usp=drive_link"
         }
       ]
     },
@@ -112,7 +126,17 @@
     },
     {
       "name": "CSE423",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing",
+      "subLinks": [
+        {
+          "label": "BRACU CSE-423 (Computer Graphics)",
+          "url": "https://youtube.com/playlist?list=PLDVV75am9g9we_IwWB4zCD_HkoR4oX775&si=5GVCor4VtImygGlQ"
+        }
+      ]
+    },
+    {
+      "name": "CSE340",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1TggkuY2juqU2hg6HO2DTcuWl12MDsWKq?usp=sharing"
     },
     {
       "name": "CSE341",
