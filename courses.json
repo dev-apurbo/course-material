@@ -115,8 +115,32 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing"
     },
     {
+      "name": "CSE341",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1eflLFwBlNLDlLjyZk3JgSF8ONJABrkbO?usp=sharing",
+      "subLinks": [
+        {
+          "label": "CSE341 : Microprocessor",
+          "url": "https://youtube.com/playlist?list=PLCh3_NUqW7_JKPROcvmNlr1t0QWmflRIy&si=RR5jnrGH82or6xao"
+        },
+        {
+          "label": "CSE341 Lab",
+          "url": "https://youtube.com/playlist?list=PLCh3_NUqW7_KNt-hLsUqj8zZmXHO7lOl0&si=vmQSY9fv9m330Z--"
+        }
+      ]
+    },
+    {
       "name": "CSE470",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1ZulBhRBv7kbwlk45FnBZ4fjlBVXfn4g-?usp=sharing"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1ZulBhRBv7kbwlk45FnBZ4fjlBVXfn4g-?usp=sharing",
+      "subLinks": [
+        {
+          "label": "2022 Spring CSE470 Recordings",
+          "url": "https://youtube.com/playlist?list=PLjUIUiI7C4na9VCtlPmZaVTGRoYAlPaPE&si=UD4fIrnOhb84-Hsn"
+        },
+        {
+          "label": "Laravel Tutorial (2022 June)",
+          "url": "https://youtube.com/playlist?list=PLjUIUiI7C4nZF4t_v86oujAEfS1bLtcwH&si=Z59KL18-EvtS4jbD"
+        }
+      ]
     },
     {
       "name": "MAT215",
