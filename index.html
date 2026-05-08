@@ -322,7 +322,7 @@
     <div id="buttons" class="button-list"></div>
   </div>
   <footer>
-    <span>Submit files: <a href="mailto:code.cse.bracu@gmail.com">code.cse.bracu@gmail.com</a></span>
+    <span>Submit files: <a id="contactEmail" href="mailto:code.cse.bracu@gmail.com">code.cse.bracu@gmail.com</a></span>
     <span class="footer-divider">•</span>
     <span>Made with <span class="heart">♥</span> for Bracu Students</span>
   </footer>
@@ -472,9 +472,26 @@
       }
     }
 
+    function setupContactLink() {
+      const emailLink = document.getElementById('contactEmail');
+      const email = 'code.cse.bracu@gmail.com';
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      if (isMobile) {
+        // Mobile: Use mailto to open the Gmail app
+        emailLink.href = `mailto:${email}`;
+      } else {
+        // PC: Use Gmail web interface
+        emailLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+        emailLink.target = '_blank';
+        emailLink.rel = 'noopener noreferrer';
+      }
+    }
+
     sortBy.addEventListener('change', renderCourses);
     searchCourse.addEventListener('input', renderCourses);
     loadCourses();
+    setupContactLink();
   </script>
 </body>
 </html>
