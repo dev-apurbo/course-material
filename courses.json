@@ -182,11 +182,23 @@
     },
     {
       "name": "MAT215",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1kXltofi7112CXKW-jBECstT-bGNO8Dy9?usp=sharing"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1kXltofi7112CXKW-jBECstT-bGNO8Dy9?usp=sharing",
+      "subLinks": [
+        {
+          "label": "MAT215 | BracU | Complex Variables and Laplace Transformations",
+          "url": "https://youtube.com/playlist?list=PL63IQkIty91joaYSai_5431PQ9BP5pvew&si=GCCPnb-xW6rzbooB"
+        }
+      ]
     },
     {
       "name": "MAT216",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1IYLA4uj8gnUPoxBMHVc5d6f12CiFr2Rk?usp=drive_link"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1IYLA4uj8gnUPoxBMHVc5d6f12CiFr2Rk?usp=drive_link",
+      "subLinks": [
+        {
+          "label": "MAT216 | Linear Algebra and Fourier Analysis Brac University",
+          "url": "https://youtube.com/playlist?list=PL63IQkIty91gupdtXVkCm5FN2X3X4RbSz&si=apSG7DeE0OiHRDSk"
+        }
+      ]
     },
     {
       "name": "CSE330",
