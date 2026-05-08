@@ -51,7 +51,10 @@
       letter-spacing: 0.02em;
       display: flex;
       align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 6px;
+      text-align: center;
       box-shadow: 0 8px 32px rgba(15, 23, 42, 0.04);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: default;
@@ -76,6 +79,22 @@
       0% { transform: scale(1); opacity: 0.8; }
       50% { transform: scale(1.2); opacity: 1; }
       100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--brand-dark);
+      text-decoration: underline;
+    }
+
+    .footer-divider {
+      opacity: 0.5;
+      margin: 0 4px;
     }
 
     .container {
@@ -302,7 +321,11 @@
     <p class="note">Select a course to open its Google Drive folder.</p>
     <div id="buttons" class="button-list"></div>
   </div>
-  <footer>Created by AKB</footer>
+  <footer>
+    <span>Created by AKB</span>
+    <span class="footer-divider">•</span>
+    <span>If you want to add files to Google Drive, mail them to: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=code.cse.bracu@gmail.com" target="_blank">code.cse.bracu@gmail.com</a></span>
+  </footer>
   <script>
     const buttons = document.getElementById('buttons');
     const sortBy = document.getElementById('sortBy');
