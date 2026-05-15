@@ -1,6 +1,20 @@
 {
   "courses": [
     {
+      "name": "CSE",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1ACy6GercSuZvJbnkdPtaNU_w1LwRKoL3?usp=sharing",
+      "subLinks": [
+        {
+          "label": "CSE Elective List",
+          "url": "https://docs.google.com/spreadsheets/d/1-JM6a-JM4y4TiqMv9M4OXMBTnIAbn0lhsvfVGlfR1OU/edit?gid=1207964579#gid=1207964579"
+        },
+        {
+          "label": "2026 Spring CSE Routine / Consultation v1.0",
+          "url": "https://docs.google.com/spreadsheets/d/1aZ_8do2w3aA382MhZyJKG5amXZ6fpthJYoLsdM9x0gU/edit?gid=2069304119#gid=2069304119"
+        }
+      ]
+    },
+    {
       "name": "CSE260",
       "googleDriveLink": "https://drive.google.com/drive/folders/1Ximy2kPtwTuhRNNYJfKp-4UBKCgzXXEe?usp=sharing"
     },
