@@ -120,6 +120,28 @@
       letter-spacing: 0.02em;
     }
 
+    .tutorial-link {
+      display: inline-flex;
+      align-items: center;
+      background: #dbeafe;
+      color: var(--brand-dark);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid #bfdbfe;
+      transition: all 0.2s ease;
+      margin-left: 10px;
+      box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+    }
+
+    .tutorial-link:hover {
+      background: #bfdbfe;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.15);
+    }
+
     .header {
       display: flex;
       flex-wrap: wrap;
@@ -301,7 +323,7 @@
     <div class="header">
       <div>
         <h1>Brac University courses</h1>
-        <p class="subtitle">CSE</p>
+        <p class="subtitle" style="display: flex; align-items: center;">CSE <a href="tutorial.html" class="tutorial-link">💡 How to Use</a></p>
       </div>
       <div class="controls">
         <label for="searchCourse">Search:</label>

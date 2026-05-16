@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Use - Course Material</title>
+  <style>
+    :root {
+      --bg-main: #eef2ff;
+      --bg-accent: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #0f172a;
+      --text-muted: #64748b;
+      --brand: #2563eb;
+      --brand-dark: #1d4ed8;
+      --border: #e2e8f0;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 45%),
+        radial-gradient(circle at bottom left, #ede9fe 0%, transparent 40%),
+        var(--bg-main);
+      color: var(--text-primary);
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: min(800px, 96vw);
+      padding: 40px;
+      background: var(--card-bg);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+      color: var(--brand);
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--text-primary);
+      margin-top: 30px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--brand);
+      color: white;
+      border-radius: 50%;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-size: 1.05rem;
+      margin-top: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      background: var(--bg-accent);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background: var(--bg-accent);
+      color: var(--text-primary);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .back-button:hover {
+      background: #e2e8f0;
+      transform: translateY(-1px);
+    }
+
+    .highlight {
+      background: #dbeafe;
+      color: var(--brand-dark);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.04);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: default;
+      user-select: none;
+    }
+
+    footer:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.8);
+      border-color: var(--brand);
+      box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+      color: var(--text-primary);
+    }
+
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--brand-dark);
+      text-decoration: underline;
+    }
+
+    .footer-divider {
+      opacity: 0.5;
+      margin: 0 4px;
+    }
+
+    footer .heart {
+      color: #ff4d4d;
+      font-size: 1rem;
+      animation: pulse 2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-button">← Back to Courses</a>
+
+  <div class="container">
+    <div class="header">
+      <h1>How to Use the Course Portal</h1>
+      <p class="subtitle">A quick guide to finding your Brac University course materials.</p>
+    </div>
+
+    <h2><span class="step-number">1</span> Searching for a Course</h2>
+    <p>
+      At the top right of the homepage, you will find a <span class="highlight">Search</span> bar. 
+      Simply type the course code (e.g., "CSE422" or "MAT215") to filter the list instantly. 
+      The list will update as you type, showing only the courses that match your search.
+    </p>
+
+    <h2><span class="step-number">2</span> Sorting the List</h2>
+    <p>
+      Next to the search bar, there is a <span class="highlight">Sort</span> dropdown. You can use it to organize the courses:
+    </p>
+    <ul>
+      <li><strong>Course Name (A-Z)</strong>: Sorts courses in alphabetical order (default).</li>
+      <li><strong>Course Name (Z-A)</strong>: Sorts courses in reverse alphabetical order.</li>
+    </ul>
+
+    <h2><span class="step-number">3</span> Accessing Main Course Materials</h2>
+    <p>
+      Each course is listed as a blue button. Clicking directly on the course name (e.g., <span class="highlight">CSE422</span>) 
+      will open a new tab taking you to the main Google Drive folder containing the materials for that specific course.
+    </p>
+
+    <h2><span class="step-number">4</span> Exploring Sub-Links</h2>
+    <p>
+      If a course has additional resources like playlists, practice sheets, or separate lab folders, you will see a 
+      <span class="highlight">+</span> button on the right side of the course name.
+    </p>
+    <ul>
+      <li>Click the <span class="highlight">+</span> button to expand and view the sub-links.</li>
+      <li>Click any of the gray sub-link buttons to access specific resources like YouTube playlists or Google Docs.</li>
+      <li>Click the <span class="highlight">-</span> button to collapse the sub-links again.</li>
+    </ul>
+
+    <h2><span class="step-number">5</span> Submitting New Materials</h2>
+    <p>
+      If you have course materials that are missing from the portal, or if you find broken links, you can contribute! 
+      Scroll to the bottom of the page and click on the email address in the footer: <span class="highlight">code.cse.bracu@gmail.com</span>.
+    </p>
+    <p>
+      Clicking the email link will automatically open your device's default mail app (or Gmail web on PC) so you can send the files or links to the maintainers.
+    </p>
+
+  </div>
+
+  <footer>
+    <span>Submit files: <a id="contactEmail" href="mailto:code.cse.bracu@gmail.com">code.cse.bracu@gmail.com</a></span>
+    <span class="footer-divider">•</span>
+    <span>Made with <span class="heart">♥</span> for Bracu Students</span>
+  </footer>
+
+  <script>
+    function setupContactLink() {
+      const emailLink = document.getElementById('contactEmail');
+      const email = 'code.cse.bracu@gmail.com';
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      if (isMobile) {
+        // Mobile: Use mailto to open the Gmail app
+        emailLink.href = `mailto:${email}`;
+      } else {
+        // PC: Use Gmail web interface
+        emailLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+        emailLink.target = '_blank';
+        emailLink.rel = 'noopener noreferrer';
+      }
+    }
+    setupContactLink();
+  </script>
+
+</body>
+</html>
