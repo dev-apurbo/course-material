@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,9 +77,20 @@
     }
 
     @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.2); opacity: 1; }
-      100% { transform: scale(1); opacity: 0.8; }
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
     }
 
     footer a {
@@ -298,8 +310,9 @@
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
-  <script defer src="/<unique-path>/script.js"></script>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
+
 <body>
   <div class="container">
     <div class="header">
@@ -309,12 +322,8 @@
       </div>
       <div class="controls">
         <label for="searchCourse">Search:</label>
-        <input
-          id="searchCourse"
-          type="search"
-          placeholder="Search by course name..."
-          aria-label="Search courses by name"
-        />
+        <input id="searchCourse" type="search" placeholder="Search by course name..."
+          aria-label="Search courses by name" />
         <label for="sortBy">Sort:</label>
         <select id="sortBy" aria-label="Sort courses by name">
           <option value="az">Course Name (A-Z)</option>
@@ -480,7 +489,7 @@
       const emailLink = document.getElementById('contactEmail');
       const email = 'code.cse.bracu@gmail.com';
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      
+
       if (isMobile) {
         // Mobile: Use mailto to open the Gmail app
         emailLink.href = `mailto:${email}`;
@@ -498,4 +507,5 @@
     setupContactLink();
   </script>
 </body>
+
 </html>
