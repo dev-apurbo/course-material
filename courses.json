@@ -198,7 +198,33 @@
     },
     {
       "name": "CSE340",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1TggkuY2juqU2hg6HO2DTcuWl12MDsWKq?usp=sharing"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1TggkuY2juqU2hg6HO2DTcuWl12MDsWKq?usp=sharing",
+      "subLinks": [
+        {
+          "label": "BRACU CSE340 Chapter - 1 ( Online Class Recording and Practice Problems ) Partha Bhoumik",
+          "url": "https://youtube.com/playlist?list=PLKyFAP_ydM14yhCG3g7F1USsIQuQkRUFm&si=p2QSD1GsNFo8hmD7"
+        },
+        {
+          "label": "BRACU CSE340 Chapter - 2 (Complete) by Partha Bhoumik",
+          "url": "https://youtube.com/playlist?list=PLKyFAP_ydM15Rvaw9HBNF4WOrtAtt8M-w&si=Hn5j0_ft-OorVKOW"
+        },
+        {
+          "label": "BRACU CSE340 Chapter - 3 Partha Bhoumik",
+          "url": "https://youtube.com/playlist?list=PLKyFAP_ydM14ALrCiu617O4bKvlWiGOqj&si=tljsZs6InhvUtW14"
+        },
+        {
+          "label": "BRACU CSE340 Chapter - 4 Partha Bhoumik",
+          "url": "https://youtube.com/playlist?list=PLKyFAP_ydM17VPOp58yPMBTWkG8__Kwg7&si=p8XudM19n2mRlHFj"
+        },
+        {
+          "label": "BRACU CSE340 Chapter - 5 Partha Bhoumik",
+          "url": "https://youtube.com/playlist?list=PLKyFAP_ydM145s06fjTtGoQjZovvZ40LJ&si=2ZjN7K-RDs-pr5_2"
+        },
+        {
+          "label": "CSE340(Bracu) - computer Architecture by Lara Khanom",
+          "url": "https://youtube.com/playlist?list=PLo7ClweUxBlUH8JD42X34rtigEQ-lhXx_&si=EX9w44LdnAJfhvTi"
+        }
+      ]
     },
     {
       "name": "CSE341",
