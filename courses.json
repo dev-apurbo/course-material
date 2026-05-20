@@ -1,6 +1,16 @@
 {
   "courses": [
     {
+      "name": "CSE110 [Python]",
+      "googleDriveLink": "https://drive.google.com/drive/folders/1vSygqlbG6QK-ZlugVbrdMSoRD4b_wCjD?usp=sharing",
+      "subLinks": [
+        {
+          "label": "Java For Beginners | Bangla Tutorials",
+          "url": "https://youtube.com/playlist?list=PLvr0Ht-XkB_0KC2-N3hv0V3ib-Z6wKkAy&si=brGMX2PXztKDnPbp"
+        }
+      ]
+    },
+    {
       "name": "CSE Important Links",
       "googleDriveLink": "https://drive.google.com/drive/folders/1ACy6GercSuZvJbnkdPtaNU_w1LwRKoL3?usp=sharing",
       "subLinks": [
