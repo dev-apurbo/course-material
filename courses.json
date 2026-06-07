@@ -15,6 +15,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1ACy6GercSuZvJbnkdPtaNU_w1LwRKoL3?usp=sharing",
       "subLinks": [
         {
+          "label": "Updated_Degree_Plan_CSE",
+          "url": "https://docs.google.com/document/d/1BksVbAqjgdVg-IbVJ0i09fVQcjw-_Sm_/edit"
+        },
+        {
           "label": "CSE Elective List",
           "url": "https://docs.google.com/spreadsheets/d/1-JM6a-JM4y4TiqMv9M4OXMBTnIAbn0lhsvfVGlfR1OU/edit?gid=1207964579#gid=1207964579"
         },
