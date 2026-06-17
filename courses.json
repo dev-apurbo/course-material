@@ -231,10 +231,6 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing",
       "subLinks": [
         {
-          "label": "BRACU CSE-423 (Computer Graphics)",
-          "url": "https://youtube.com/playlist?list=PLDVV75am9g9we_IwWB4zCD_HkoR4oX775&si=5GVCor4VtImygGlQ"
-        },
-        {
           "label": "CSE423 Computer Graphics by Ara Debugs",
           "url": "https://youtube.com/playlist?list=PLNf4BCrqAigiuXmsBSwZr9yhkCi7L8ONs&si=GQ9t9RgnozqW-sl8"
         },
@@ -250,18 +246,22 @@
           "label": "CSE423||Summer25 by Anika Tasnim",
           "url": "https://youtube.com/playlist?list=PL3rn6LbL8yiYXifz_6JtodVLI2HXdqNxi&si=pin0eKVW6LVNl8XO"
         },
-          {
-            "label": "Computer Graphics Lab by Abid Jahan Apon",
-            "url": "https://youtube.com/playlist?list=PLhRm8DnB_rpaEAaI00AvonD-feraLHAIz&si=SZXMLdG-hUDkyLHv"
-          },
-          {
-            "label": "Lab Assignment 1 || Introduction to Computer Graphics Library (PyOpenGL) CSE423",
-            "url": "https://youtu.be/hW10GzCorR4?si=PGyVMGrBfNHTXSUZ"
-          },
-          {
-            "label": "CSE423 || Lab Assignment 1",
-            "url": "https://youtu.be/3Xxb57YjwGA?si=zDCFCRHWdcp7xVFF"
-          }
+        {
+          "label": "BRACU CSE-423 (Computer Graphics)",
+          "url": "https://youtube.com/playlist?list=PLDVV75am9g9we_IwWB4zCD_HkoR4oX775&si=5GVCor4VtImygGlQ"
+        },
+        {
+          "label": "Computer Graphics Lab by Abid Jahan Apon",
+          "url": "https://youtube.com/playlist?list=PLhRm8DnB_rpaEAaI00AvonD-feraLHAIz&si=SZXMLdG-hUDkyLHv"
+        },
+        {
+          "label": "Lab Assignment 1 || Introduction to Computer Graphics Library (PyOpenGL) CSE423",
+          "url": "https://youtu.be/hW10GzCorR4?si=PGyVMGrBfNHTXSUZ"
+        },
+        {
+          "label": "CSE423 || Lab Assignment 1",
+          "url": "https://youtu.be/3Xxb57YjwGA?si=zDCFCRHWdcp7xVFF"
+        }
       ]
     },
     {
