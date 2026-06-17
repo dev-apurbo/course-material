@@ -231,6 +231,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing",
       "subLinks": [
         {
+          "label": "CSE423 Computer Graphics",
+          "url": "https://www.youtube.com/playlist?list=PLtQXTSdoymQetY8HSK6Y0ZsTH7avkozLR"
+        },
+        {
           "label": "CSE423 Computer Graphics by Ara Debugs",
           "url": "https://youtube.com/playlist?list=PLNf4BCrqAigiuXmsBSwZr9yhkCi7L8ONs&si=GQ9t9RgnozqW-sl8"
         },
