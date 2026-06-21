@@ -231,6 +231,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1mlULWyOCm2-8Z06VUlRCxBPssoMnppUF?usp=sharing",
       "subLinks": [
         {
+          "label": "CSE423 Summer 2026",
+          "url": "https://drive.google.com/drive/folders/1UxXnqULouap1SPgT52wvtrQzwPeQH2k3"
+        },
+        {
           "label": "CSE423 Computer Graphics",
           "url": "https://www.youtube.com/playlist?list=PLtQXTSdoymQetY8HSK6Y0ZsTH7avkozLR"
         },
