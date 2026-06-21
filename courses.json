@@ -335,6 +335,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1ZulBhRBv7kbwlk45FnBZ4fjlBVXfn4g-?usp=sharing",
       "subLinks": [
         {
+          "label": "CSE470 2026 Summer [NAFR]",
+          "url": "https://drive.google.com/drive/folders/1o15vEFHQIvP5W_xlTA8mnn5hwx0jelVA"
+        },
+        {
           "label": "2022 Spring CSE470 Recordings",
           "url": "https://youtube.com/playlist?list=PLjUIUiI7C4na9VCtlPmZaVTGRoYAlPaPE&si=UD4fIrnOhb84-Hsn"
         },
