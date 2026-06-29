@@ -104,7 +104,33 @@
     },
     {
       "name": "CSE460",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1w2hcJL1wg_beAlyJ-kzuWZrkZTwq2s8d?usp=sharing"
+      "googleDriveLink": "https://drive.google.com/drive/folders/1w2hcJL1wg_beAlyJ-kzuWZrkZTwq2s8d?usp=sharing",
+      "subLinks": [
+        {
+          "label": "Lecture Slides[SDU]",
+          "url": "https://drive.google.com/drive/folders/17xZbShtcAd6TdZEr6_uLqwEiELeXcZaI?usp=drive_link"
+        },
+        {
+          "label": "Lecture Slides THL YAP",
+          "url": "https://drive.google.com/drive/folders/1gPMHnA2iGk1xICbc_o2DD9hUYdYVSbXS"
+        },
+        {
+          "label": "Practice materials for midterm examination",
+          "url": "https://drive.google.com/drive/folders/1x-7IZoLDrw-JxqhG7JVAVyba45MlwRTu"
+        },
+        {
+          "label": "Practice materials for final examination",
+          "url": "https://drive.google.com/drive/folders/18tKhrIZT7iiPsbzH4BrwbFB2q7_nQBfh?usp=drive_link"
+        },
+        {
+          "label": "CSE460 Theory Handout (Summer 2026)",
+          "url": "https://docs.google.com/document/d/1JOz9L_7TeTM4r33q7EvfTS9FwMPl2o4o/edit#heading=h.gjdgxs"
+        },
+        {
+          "label": "CSE460 - Course Outline Summer 26",
+          "url": "https://docs.google.com/document/d/1KIFqNvN-c6oLNasqRZqybVQ0c6TWoylu/edit#heading=h.isluyafgkpzg"
+        }
+      ]
     },
     {
       "name": "CSE471",
