@@ -29,6 +29,10 @@
         {
           "label": "2026 Spring CSE Routine / Consultation v1.0",
           "url": "https://docs.google.com/spreadsheets/d/1aZ_8do2w3aA382MhZyJKG5amXZ6fpthJYoLsdM9x0gU/edit?gid=2069304119#gid=2069304119"
+        },
+        {
+          "label": "Lab Finder",
+          "url": "https://thestudysync.vercel.app/lab-finder"
         }
       ]
     },
