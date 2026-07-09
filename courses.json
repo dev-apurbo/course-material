@@ -430,16 +430,16 @@
       "name": "CSE330",
       "googleDriveLink": "https://drive.google.com/drive/folders/1Jn6XW6JB7wzDP4fztvMsnCbVKLaUeHUF?usp=drive_link"
     },
-    {
-      "name": "PHY111",
-      "googleDriveLink": "https://drive.google.com/drive/folders/1242Wob5hlVOi8yuTd8fNipigjtLlwvzl?usp=drive_link",
-      "subLinks": [
-        {
-          "label": "PHY111 || FALL 23 || HSN || SEC_26",
-          "url": "https://youtube.com/playlist?list=PLGWGlQTvPbofIdV-PpEfvMvDg2YjpWmif&si=HqWLVb0CJQ6Sfj5V"
-        }
-      ]
-    },
+    // {
+    //   "name": "PHY111",
+    //   "googleDriveLink": "https://drive.google.com/drive/folders/1242Wob5hlVOi8yuTd8fNipigjtLlwvzl?usp=drive_link",
+    //   "subLinks": [
+    //     {
+    //       "label": "PHY111 || FALL 23 || HSN || SEC_26",
+    //       "url": "https://youtube.com/playlist?list=PLGWGlQTvPbofIdV-PpEfvMvDg2YjpWmif&si=HqWLVb0CJQ6Sfj5V"
+    //     }
+    //   ]
+    // },
     {
       "name": "RS",
       "googleDriveLink": "https://www.bracu.ac.bd/student-life/residential-semester",
