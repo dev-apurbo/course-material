@@ -401,6 +401,14 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1eflLFwBlNLDlLjyZk3JgSF8ONJABrkbO?usp=sharing",
       "subLinks": [
         {
+          "label": "CSE341 - Microprocessor by LHK Explains",
+          "url": "https://youtube.com/playlist?list=PL2ETCwNgERAIJ7wC9rZrr0ZIppg8K8u_T&si=UzN41s0FSpe74d8s"
+        },
+        {
+          "label": "CSE 341 - Microprocessors by AKO",
+          "url": "https://youtube.com/playlist?list=PLZTczv_dAo9OT9Z6tUzePkPd2GksIJysX&si=VEJJHkwIB-LvIexq"
+        },
+        {
           "label": "CSE341 : Microprocessor",
           "url": "https://youtube.com/playlist?list=PLCh3_NUqW7_JKPROcvmNlr1t0QWmflRIy&si=RR5jnrGH82or6xao"
         },
