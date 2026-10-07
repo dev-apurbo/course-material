@@ -15,6 +15,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1ACy6GercSuZvJbnkdPtaNU_w1LwRKoL3?usp=sharing",
       "subLinks": [
         {
+          "label": "Faculty Routine — Search by Initial",
+          "url": "https://script.google.com/macros/s/AKfycbzqBTjhBZ1x3Jb2HCxh7vDEAEI6_55xLhiKypPVxvANeZd7JUMtbGnn8pf30u2SHczH8w/exec"
+        },
+        {
           "label": "Updated_Degree_Plan_CSE",
           "url": "https://docs.google.com/document/d/1BksVbAqjgdVg-IbVJ0i09fVQcjw-_Sm_/edit"
         },
@@ -52,6 +56,10 @@
       "name": "CSE421",
       "googleDriveLink": "https://drive.google.com/drive/folders/10PFcSDdv54kC7y7l7fIK2GUBBzdB-PAz?usp=sharing",
       "subLinks": [
+        {
+          "label": "Fall 26 Slides",
+          "url": "https://drive.google.com/drive/folders/1kBhU_J3sSijAv72Ny4DpO1VwLkqna_2g"
+        },
         {
           "label": "CSE421 by Anika Tahsin",
           "url": "https://youtube.com/playlist?list=PLCh3_NUqW7_J2wA2OxXP27lyFUDBKpLpw&si=DMAoaDYj1WxvmaTK"
