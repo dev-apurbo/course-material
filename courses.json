@@ -299,6 +299,10 @@
       "googleDriveLink": "https://drive.google.com/drive/folders/1mXRkVii5bH2wEYwQRuAchvDW8Up0l5k2",
       "subLinks": [
         {
+          "label": "[Student view] CSE321 Theory",
+          "url": "https://drive.google.com/drive/folders/1KfDgfNXyhBg9zBfHT3lruYWc6rzTKkel"
+        },
+        {
           "label": "Cse321 TRZ Recordings Fall 2020",
           "url": "https://youtube.com/playlist?list=PL9aZtK5kh5WdJKy1ZuoGp-6R3gn36841-&si=A5hGNWMwW3kmcKJ4"
         },
